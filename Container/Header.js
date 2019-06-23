@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import { withStyles  } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 
 const Styles = theme => 
  ({
@@ -17,23 +18,26 @@ class Header extends Component{
      const classes = this.props;
     return(
       <div>
-     <span>
-      <span style={{padding: '100px'}} >
+     <Grid  container
+      direction="row"
+      wrap
+      >
+      <Grid sm={2} xs={3} style={{padding: '10px'}} >
      <b> 3M </b> Innovation
-      </span>
-      <span style={{padding: '50px'}}>
+      </Grid>
+      <Grid sm={2} xs={3} style={{padding: '10px'}} >
       Home
-      </span>
-      <span style={{padding: '50px'}}>
+      </Grid>
+       <Grid sm={2} xs={3} style={{padding: '10px'}} >
       Innovation Stories
-      </span>
-      <span style={{padding: '50px'}}>
+      </Grid>
+       <Grid sm={2} xs={3} style={{padding: '10px'}} >
       Technology
-      </span>
-      <span style={{padding: '50px'}}>
+      </Grid>
+      <Grid sm={2} xs={3} style={{padding: '10px'}} >
       Convert with 3M
-      </span>
-     </span>
+      </Grid>
+     </Grid>
     
       </div>
     )

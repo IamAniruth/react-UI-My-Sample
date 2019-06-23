@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import Hidden from '@material-ui/core/Hidden';
 
 const useStyles = theme => ({
   root: {
@@ -29,6 +30,7 @@ class Home extends Component{
       <Grid container className={classes.root} spacing={2}>
      <div>
       <hr style={{marginTop:'30px'}} />
+         <Hidden xsDown>
       <Grid
        container
       direction="row"
@@ -37,6 +39,7 @@ class Home extends Component{
        item xs={12}
       
        >
+
        <Typography variant="h1" component="h2" gutterBottom style={{padding:'30px'}}>
      <b> Innovation story Landing </b>
       </Typography>
@@ -52,14 +55,39 @@ class Home extends Component{
       </Typography>
 
       </Grid>
-       
+       </Hidden>
+       <Hidden xlUp>
+        <Grid
+       container
+      direction="row"
+      justify="center"
+      alignItems="center"
+       item xs={12}
+      
+       >
+
+       <Typography variant="h6" component="h2" gutterBottom style={{padding:'30px'}}>
+     <b> Innovation story Landing </b>
+      </Typography>
+      </Grid>
+      <Grid 
+       container
+      direction="row"
+     
+      item xs={12}>
+       <Typography variant="h6" component="h6" gutterBottom style={{padding:'5px',margin:'0px 25px 30px 30px'}}>
+      These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media
+      </Typography>
+
+      </Grid>
+       </Hidden>
        <hr />
       </div>
       <Grid container
   direction="row"
   justify="space-around"
   alignItems="center" xs={12}  style={{marginBottom:'50px'}} >
-         <Grid item xs={3}>
+         <Grid item sm={3} xs={11}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -74,7 +102,7 @@ class Home extends Component{
             </div>
           </Grid>
          </Grid>
-         <Grid item xs={3}>
+         <Grid item sm={3} xs={11}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -89,7 +117,7 @@ class Home extends Component{
             </div>
           </Grid>
          </Grid>
-           <Grid item xs={3}>
+           <Grid item sm={3} xs={11}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -112,7 +140,7 @@ class Home extends Component{
   direction="row"
   justify="space-around"
   alignItems="center" xs={12} style={{marginBottom:'50px'}} >
-         <Grid item xs={3}>
+         <Grid item sm={3} xs={11}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -127,7 +155,7 @@ class Home extends Component{
             </div>
           </Grid>
          </Grid>
-         <Grid item xs={3}>
+         <Grid item sm={3} xs={11}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -142,7 +170,7 @@ class Home extends Component{
             </div>
           </Grid>
          </Grid>
-           <Grid item xs={3}>
+           <Grid item sm={3} xs={11}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -172,19 +200,48 @@ class Home extends Component{
     wrap
   >
 
-  <Grid xs={4}  container
+  <Grid sm={4} xs={11}  container
     direction="row"
      justify="space-around"
     alignItems="center"
     wrap
     >
-  <Grid xs={3}>
-  <div style={{marginLeft:'25px',marginBottom:'25px'}} >
+  <Grid  xs={3}>
+  <div style={{marginLeft:'15px',marginBottom:'25px',}} >
   <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} height="100%" width="100%" />
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'15px'}} height="100%" width="100%" />
    </div>
    <div>
-    <Button variant="contained" className={classes.button} >
+    <Button variant="contained" className={classes.button} style={{size:"small"}} >
+             View
+          </Button>
+   </div>
+   </div>
+  </Grid>
+  <Grid  xs={7} >
+  <div>
+  <div>
+  <b> Tire 2 story Headline </b>
+  </div>
+  <div>
+   These cookies are used to collect information about how you interact with our website 
+   </div>
+   </div>
+  </Grid>
+  </Grid>
+
+    <Grid sm={4} xs={11}   container
+    direction="row"
+     justify="space-around"
+    alignItems="center"
+    wrap>
+  <Grid xs={3}>
+  <div style={{marginLeft:'15px',marginBottom:'25px',}} >
+  <div>
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'15px'}} height="100%" width="100%" />
+   </div>
+   <div>
+    <Button variant="contained" className={classes.button} style={{size:"small"}} >
              View
           </Button>
    </div>
@@ -202,18 +259,18 @@ class Home extends Component{
   </Grid>
   </Grid>
 
-    <Grid xs={4}  container
+    <Grid  sm={4} xs={11}  container
     direction="row"
      justify="space-around"
     alignItems="center"
     wrap>
   <Grid xs={3}>
-     <div style={{marginLeft:'25px'}} >
+  <div style={{marginLeft:'25px',marginBottom:'25px',}} >
   <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} height="100%" width="100%" />
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'50px'}} height="100%" width="100%" />
    </div>
    <div>
-    <Button variant="contained" className={classes.button}>
+    <Button variant="contained" className={classes.button} style={{size:"small"}} >
              View
           </Button>
    </div>
@@ -231,18 +288,18 @@ class Home extends Component{
   </Grid>
   </Grid>
 
-    <Grid xs={4}  container
+     <Grid  sm={4} xs={11}  container
     direction="row"
      justify="space-around"
     alignItems="center"
     wrap>
   <Grid xs={3}>
-    <div style={{marginLeft:'25px'}} >
+  <div style={{marginLeft:'25px',marginBottom:'25px',}} >
   <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} height="100%" width="100%" />
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'50px'}} height="100%" width="100%" />
    </div>
    <div>
-    <Button variant="contained" className={classes.button}>
+    <Button variant="contained" className={classes.button} style={{size:"small"}} >
              View
           </Button>
    </div>
@@ -260,18 +317,18 @@ class Home extends Component{
   </Grid>
   </Grid>
 
-     <Grid xs={4}  container
+     <Grid  sm={4} xs={11}  container
     direction="row"
      justify="space-around"
     alignItems="center"
     wrap>
   <Grid xs={3}>
-    <div style={{marginLeft:'25px'}} >
+  <div style={{marginLeft:'25px',marginBottom:'25px',}} >
   <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} height="100%" width="100%" />
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'50px'}} height="100%" width="100%" />
    </div>
    <div>
-    <Button variant="contained" className={classes.button}>
+    <Button variant="contained" className={classes.button} style={{size:"small"}} >
              View
           </Button>
    </div>
@@ -289,18 +346,18 @@ class Home extends Component{
   </Grid>
   </Grid>
 
-     <Grid xs={4}  container
+     <Grid  sm={4} xs={11}  container
     direction="row"
      justify="space-around"
     alignItems="center"
     wrap>
   <Grid xs={3}>
-    <div style={{marginLeft:'25px'}} >
+  <div style={{marginLeft:'25px',marginBottom:'25px',}} >
   <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} height="100%" width="100%" />
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'50px'}} height="100%" width="100%" />
    </div>
    <div>
-    <Button variant="contained" className={classes.button}>
+    <Button variant="contained" className={classes.button} style={{size:"small"}} >
              View
           </Button>
    </div>
@@ -318,18 +375,18 @@ class Home extends Component{
   </Grid>
   </Grid>
 
-     <Grid xs={4}  container
+     <Grid  sm={4} xs={11}  container
     direction="row"
      justify="space-around"
     alignItems="center"
     wrap>
   <Grid xs={3}>
-    <div style={{marginLeft:'25px'}} >
+  <div style={{marginLeft:'25px',marginBottom:'25px',}} >
   <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} height="100%" width="100%" />
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'50px'}} height="100%" width="100%" />
    </div>
    <div>
-    <Button variant="contained" className={classes.button}>
+    <Button variant="contained" className={classes.button} style={{size:"small"}} >
              View
           </Button>
    </div>
@@ -346,36 +403,7 @@ class Home extends Component{
    </div>
   </Grid>
   </Grid>
-
-     <Grid xs={4}  container
-    direction="row"
-     justify="space-around"
-    alignItems="center"
-    wrap>
-  <Grid xs={3}>
-     <div style={{marginLeft:'25px'}} >
-  <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} height="100%" width="100%" />
-   </div>
-   <div>
-    <Button variant="contained" className={classes.button}>
-             View
-          </Button>
-   </div>
-   </div>
-  </Grid>
-  <Grid xs={7}>
-  <div>
-  <div>
-  <b> Tire 2 story Headline </b>
-  </div>
-  <div>
-   These cookies are used to collect information about how you interact with our website 
-   </div>
-   </div>
-  </Grid>
-  </Grid>
-     <Grid xs={4}  container
+     <Grid  sm={4} xs={11}  container
     direction="row"
      justify="space-around"
     alignItems="center"
@@ -398,7 +426,7 @@ class Home extends Component{
   </Grid>
   </Grid>
 
-       <Grid xs={4}  container
+       <Grid sm={4} xs={11}  container
     direction="row"
      justify="space-around"
     alignItems="center"
