@@ -52,7 +52,7 @@ class Footer extends Component{
       </Hidden>
        <Hidden smUp >
        <Grid  sm={12}>
-       <Paper style={{padding:'20px 20px 40px 20px'}}>
+       <Paper style={{padding:'20px 20px 40px 20px' , marginTop:'20px'}}>
         <Typography variant="h5" component="h3">
          Recommenttion Test 1
         </Typography>
