@@ -56,7 +56,7 @@ class Home extends Component{
 
       </Grid>
        </Hidden>
-       <Hidden xlUp>
+       <Hidden smUp >
         <Grid
        container
       direction="row"
@@ -86,8 +86,8 @@ class Home extends Component{
       <Grid container
   direction="row"
   justify="space-around"
-  alignItems="center" xs={12}  style={{marginBottom:'50px'}} >
-         <Grid item sm={3} xs={11}>
+  alignItems="center" xs={12}  style={{ marginBottom:'50px'}} >
+         <Grid item sm={3} xs={11} style={{padding:'20px'}}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -102,7 +102,7 @@ class Home extends Component{
             </div>
           </Grid>
          </Grid>
-         <Grid item sm={3} xs={11}>
+         <Grid item sm={3} xs={11} style={{padding:'20px'}}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -117,7 +117,7 @@ class Home extends Component{
             </div>
           </Grid>
          </Grid>
-           <Grid item sm={3} xs={11}>
+           <Grid item sm={3} xs={11} style={{padding:'20px'}}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -140,7 +140,7 @@ class Home extends Component{
   direction="row"
   justify="space-around"
   alignItems="center" xs={12} style={{marginBottom:'50px'}} >
-         <Grid item sm={3} xs={11}>
+         <Grid item sm={3} xs={11} style={{padding:'20px'}}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -155,7 +155,7 @@ class Home extends Component{
             </div>
           </Grid>
          </Grid>
-         <Grid item sm={3} xs={11}>
+         <Grid item sm={3} xs={11} style={{padding:'20px'}}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -170,7 +170,7 @@ class Home extends Component{
             </div>
           </Grid>
          </Grid>
-           <Grid item sm={3} xs={11}>
+           <Grid item sm={3} xs={11} style={{padding:'20px'}}>
           <Grid item xs={12}>
           <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'}  height="100%" width="100%" />
           </Grid>
@@ -265,9 +265,9 @@ class Home extends Component{
     alignItems="center"
     wrap>
   <Grid xs={3}>
-  <div style={{marginLeft:'25px',marginBottom:'25px',}} >
+  <div style={{marginLeft:'15px',marginBottom:'25px',}} >
   <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'50px'}} height="100%" width="100%" />
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'15px'}} height="100%" width="100%" />
    </div>
    <div>
     <Button variant="contained" className={classes.button} style={{size:"small"}} >
@@ -294,9 +294,9 @@ class Home extends Component{
     alignItems="center"
     wrap>
   <Grid xs={3}>
-  <div style={{marginLeft:'25px',marginBottom:'25px',}} >
+  <div style={{marginLeft:'15px',marginBottom:'25px',}} >
   <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'50px'}} height="100%" width="100%" />
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'15px'}} height="100%" width="100%" />
    </div>
    <div>
     <Button variant="contained" className={classes.button} style={{size:"small"}} >
@@ -323,9 +323,9 @@ class Home extends Component{
     alignItems="center"
     wrap>
   <Grid xs={3}>
-  <div style={{marginLeft:'25px',marginBottom:'25px',}} >
+  <div style={{marginLeft:'15px',marginBottom:'25px',}} >
   <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'50px'}} height="100%" width="100%" />
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'15px'}} height="100%" width="100%" />
    </div>
    <div>
     <Button variant="contained" className={classes.button} style={{size:"small"}} >
@@ -352,9 +352,9 @@ class Home extends Component{
     alignItems="center"
     wrap>
   <Grid xs={3}>
-  <div style={{marginLeft:'25px',marginBottom:'25px',}} >
+  <div style={{marginLeft:'15px',marginBottom:'25px',}} >
   <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'50px'}} height="100%" width="100%" />
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'15px'}} height="100%" width="100%" />
    </div>
    <div>
     <Button variant="contained" className={classes.button} style={{size:"small"}} >
@@ -381,9 +381,9 @@ class Home extends Component{
     alignItems="center"
     wrap>
   <Grid xs={3}>
-  <div style={{marginLeft:'25px',marginBottom:'25px',}} >
+  <div style={{marginLeft:'15px',marginBottom:'25px',}} >
   <div>
-   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'50px'}} height="100%" width="100%" />
+   <img src={'https://cdn.pixabay.com/photo/2018/04/11/19/48/player-3311600_960_720.png'} style={{marginTop:'15px'}} height="100%" width="100%" />
    </div>
    <div>
     <Button variant="contained" className={classes.button} style={{size:"small"}} >

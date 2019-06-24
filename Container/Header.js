@@ -1,6 +1,10 @@
 import React,{Component} from 'react';
 import { withStyles  } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Hidden from '@material-ui/core/Hidden';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import Icon from '@material-ui/core/Icon';
 
 const Styles = theme => 
  ({
@@ -38,6 +42,30 @@ class Header extends Component{
       Convert with 3M
       </Grid>
      </Grid>
+      <Hidden smUp >
+      <Grid  container
+      direction="row"
+      wrap
+      >
+      <Grid item xs={11}>
+       <Paper style={{padding:'2px 2px 4px 2px'}}>
+       
+      
+      <Typography component="p">
+      <b>Home > Stories</b>
+      </Typography>
+     
+      
+     
+       </Paper>
+        </Grid>
+        <Grid item xs={1}>
+        <Icon color="disabled" fontSize="large">
+        add_circle
+      </Icon>
+      </Grid>
+         </Grid>
+      </Hidden>
     
       </div>
     )
